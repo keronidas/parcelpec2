@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <nav>
-      <include src="./views/navbar.html"></include>
-    </nav>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>UOC Boilerplate</title>
+</head>
+
+<body>
+  <nav>
+    <include src="./views/navbar_fixed.html"></include>
+  </nav>
+  <div class="speakers my-5">
+    <h2 class="speakers__title">Speakers</h2>
+    <div class="row speakers__container">
+      <div class="col-md-4">
+        <div class="card speakers__card">
+          <div class="speakers__icon">👤</div>
+          <h5 class="speakers__name">Speaker One</h5>
+          <p class="speakers__description">Far far away, behind the word mountains, far from the countries Vokalia and
+            Consonantia</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card speakers__card">
+          <div class="speakers__icon">👤</div>
+          <h5 class="speakers__name">Speaker Two</h5>
+          <p class="speakers__description">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card speakers__card">
+          <div class="speakers__icon">👤</div>
+          <h5 class="speakers__name">Speaker Three</h5>
+          <p class="speakers__description">A small river named Duden flows by their place and supplies it</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card speakers__card">
+          <div class="speakers__icon">👤</div>
+          <h5 class="speakers__name">Speaker Four</h5>
+          <p class="speakers__description">It is a paradisematic country, in which roasted parts of sentences fly into
+            your mouth</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card speakers__card">
+          <div class="speakers__icon">👤</div>
+          <h5 class="speakers__name">Speaker Five</h5>
+          <p class="speakers__description">Even the all-powerful Pointing has no control about the blind texts</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card speakers__card">
+          <div class="speakers__icon">👤</div>
+          <h5 class="speakers__name">Speaker Six</h5>
+          <p class="speakers__description">One day however a small line of blind text by the name of Lorem Ipsum</p>
+        </div>
+      </div>
+    </div>
+
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+</body>
+
 </html>
