@@ -3,8 +3,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: white;
-  border-bottom: 2px solid blue;
+ 
+  background-color: #333439;
+  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -25,8 +26,7 @@
 .navbar__fixed__img__text {
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 0; /* Elimina márgenes para evitar desalineación */
-  color: black;
+  margin: 0; 
 }
 .navbar__fixed__pages{
   display: flex;
@@ -35,9 +35,9 @@
 a{
   text-decoration: none;
   text-transform: capitalize;
-  color: black;
   font-size: 1.5rem;
   font-weight: bold;
+  color: white;
  
 }
 
