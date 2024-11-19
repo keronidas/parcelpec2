@@ -17,6 +17,7 @@ import Alert from '/node_modules/bootstrap/js/dist/alert';
 /**
  * Write any other JavaScript below
  */
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 +(function () {
   const university = "UOC";
