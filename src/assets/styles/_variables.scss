@@ -10,3 +10,17 @@ $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
 $mqMinWidth: 420px;
+
+
+$accent: color.scale($uoc-corporate, $lightness: 50%);
+$text: color.scale($uoc-corporate, $lightness: 80%);
+$main: color.scale($uoc-corporate, $lightness: 90%);
+
+$primary-color: #e63946;
+$secondary-color: #1d3557;
+$background-color: #f1faee;
+$text-color: #333;
+$button-color: $primary-color;
+$button-hover: darken($primary-color, 10%);
+$font-serif: 'Merriweather', serif;
+$font-sans: 'Roboto', sans-serif;

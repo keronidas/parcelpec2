@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <nav>
-      <include src="./views/navbar_fixed.html"></include>
-    </nav>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>UOC Boilerplate</title>
+</head>
+
+<body class="body__contact">
+  <nav>
+    <include src="./views/navbar_fixed.html"></include>
+  </nav>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Formulario</h1>
+    <form>
+      <!-- Nombre -->
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre" required>
+      </div>
+
+      <!-- Correo Electrónico -->
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="correo" placeholder="Introduce tu correo" required>
+      </div>
+
+      <!-- Contraseña -->
+      <div class="mb-3">
+        <label for="contraseña" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="contraseña" placeholder="Introduce tu contraseña" required>
+      </div>
+
+      <!-- Comentarios -->
+      <div class="mb-3">
+        <label for="comentarios" class="form-label">Comentarios</label>
+        <textarea class="form-control" id="comentarios" rows="3" placeholder="Escribe tus comentarios"></textarea>
+      </div>
+
+      <!-- Checkbox de términos -->
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="terminos" required>
+        <label class="form-check-label" for="terminos">
+          Acepto los términos y condiciones
+        </label>
+      </div>
+
+      <!-- Botón -->
+      <button type="submit" class="btn btn-primary w-100">Enviar</button>
+    </form>
+  </div>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>
