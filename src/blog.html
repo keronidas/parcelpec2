@@ -1,18 +1,101 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <nav>
-      <include src="./views/navbar_fixed.html"></include>
-    </nav>
-    <h1>Esto es el blof</h1>
-    <include src="./views/footer.html" class="fixed"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>UOC Boilerplate</title>
+</head>
+
+<body>
+  <nav>
+    <include src="./views/navbar.html"></include>
+  </nav>
+  <main class="blog__main">
+    <img src="./assets/images/ciberseguridadBlog.jpg" alt="logo Ciberseguridad" class="blog__main-img">
+
+    <section class="blog__intro">
+      <div class="blog__intro-left">
+        <p>
+          La ciberseguridad es un campo crítico que protege los sistemas informáticos y redes de los ataques, accesos no
+          autorizados y daños. En la era digital, las amenazas son cada vez más sofisticadas y los riesgos, más
+          frecuentes. Es esencial contar con medidas preventivas para mitigar posibles vulnerabilidades.
+        </p>
+      </div>
+      <div class="blog__intro-right">
+        <p>
+          Para abordar estas amenazas, es vital implementar estrategias de ciberseguridad efectivas. Esto incluye el uso
+          de firewalls, antivirus y métodos de encriptación. Además, es crucial realizar auditorías de seguridad de
+          forma periódica para identificar puntos débiles en la infraestructura tecnológica.
+        </p>
+      </div>
+    </section>
+
+    <hr class="blog__separator">
+
+    <article class="blog__article">
+      <ol class="blog__list">
+        <li>
+          En el mundo de la ciberseguridad, las amenazas se clasifican en varias categorías: malware, phishing,
+          ransomware, entre otros. Es fundamental que tanto usuarios como empresas estén al tanto de estos riesgos y
+          sepan cómo protegerse.
+        </li>
+        <li>
+          Una de las técnicas más comunes para proteger la información es la autenticación multifactor, que asegura que
+          solo usuarios autorizados puedan acceder a los sistemas sensibles. Esta medida añade una capa extra de
+          seguridad, evitando accesos indeseados.
+        </li>
+        <li>
+          Las redes privadas virtuales (VPN) son otro elemento clave en la ciberseguridad. Estas redes cifran la
+          información transmitida a través de Internet, protegiendo la privacidad del usuario y evitando que los
+          ciberdelincuentes intercepten datos valiosos.
+        </li>
+      </ol>
+    </article>
+
+    <hr class="blog__separator">
+
+    <section class="blog__content">
+      <p class="blog__paragraph">
+        El aumento de los ataques cibernéticos ha provocado que muchas empresas inviertan en soluciones de seguridad
+        avanzadas. Sin embargo, la conciencia y la formación continua son igualmente cruciales para prevenir el ataque
+        más común: el error humano.
+      </p>
+      <p class="blog__paragraph">
+        En este sentido, la capacitación en seguridad informática es vital para todos los empleados de una organización.
+        A través de simulacros de phishing y entrenamiento en el manejo seguro de datos, se puede reducir
+        considerablemente el riesgo de exposición.
+      </p>
+      <img src="./assets/images/proteccionDatos.jpg" alt="Protección de datos" class="blog__img">
+      <p class="blog__paragraph">
+        Es importante señalar que la ciberseguridad no solo involucra la protección de datos de una empresa, sino
+        también la privacidad de los usuarios. Las políticas de privacidad, el cumplimiento de normativas
+        internacionales y la transparencia en el manejo de la información son fundamentales para construir una relación
+        de confianza.
+      </p>
+      <blockquote class="blog__quote">
+        <p>
+          "La seguridad informática no es una opción, es una necesidad. Proteger nuestros datos es proteger nuestra
+          identidad digital."
+        </p>
+        <cite>- Experto en Ciberseguridad</cite>
+      </blockquote>
+
+      <p class="blog__paragraph">
+        Por último, una de las mejores prácticas en ciberseguridad es realizar copias de seguridad frecuentes. Si bien
+        ninguna medida es infalible, tener un respaldo de los datos puede ser un salvavidas en caso de un ataque
+        exitoso, como un ransomware.
+      </p>
+    </section>
+
+  </main>
+
+  <include src="./views/footer.html" class="fixed"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+
+  <script type="module" src="./assets/scripts/selector.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>

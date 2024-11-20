@@ -3,6 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 30;
  
   background-color: #333439;
   color: white;
@@ -14,12 +15,12 @@
 
 .navbar__fixed__img {
   display: flex;
-  align-items: center; /* Centra verticalmente el contenido */
-  gap: 0.5rem; /* Espacio entre la imagen y el texto */
+  align-items: center; 
+  gap: 0.5rem; 
 }
 
 .navbar__fixed__img__file {
-  width: 30px; /* Ajusta el tamaño de la imagen */
+  width: 30px; 
   height: 30px;
 }
 

@@ -9,51 +9,56 @@
   <title>UOC Boilerplate</title>
 </head>
 
-<body class="body__contact">
+<body>
   <nav>
-    <include src="./views/navbar_fixed.html"></include>
+    <include src="./views/navbar.html"></include>
   </nav>
-  <div class="container mt-5">
-    <h1 class="text-center mb-4">Formulario</h1>
-    <form>
-      <!-- Nombre -->
-      <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre" required>
-      </div>
+  <main class="body__contact">
+    <div class="container mt-5">
+      <h1 class="text-center mb-4 form__title">Formulario</h1>
+      <form>
+        <!-- Nombre -->
+        <div class="mb-3">
+          <label for="nombre" class="form-label form__text">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre" required>
+        </div>
 
-      <!-- Correo Electrónico -->
-      <div class="mb-3">
-        <label for="correo" class="form-label">Correo Electrónico</label>
-        <input type="email" class="form-control" id="correo" placeholder="Introduce tu correo" required>
-      </div>
+        <!-- Correo Electrónico -->
+        <div class="mb-3">
+          <label for="correo" class="form-label form__text">Correo Electrónico</label>
+          <input type="email" class="form-control" id="correo" placeholder="Introduce tu correo" required>
+        </div>
 
-      <!-- Contraseña -->
-      <div class="mb-3">
-        <label for="contraseña" class="form-label">Contraseña</label>
-        <input type="password" class="form-control" id="contraseña" placeholder="Introduce tu contraseña" required>
-      </div>
+        <!-- Contraseña -->
+        <div class="mb-3">
+          <label for="contraseña" class="form-label form__text">Contraseña</label>
+          <input type="password" class="form-control" id="contraseña" placeholder="Introduce tu contraseña" required>
+        </div>
 
-      <!-- Comentarios -->
-      <div class="mb-3">
-        <label for="comentarios" class="form-label">Comentarios</label>
-        <textarea class="form-control" id="comentarios" rows="3" placeholder="Escribe tus comentarios"></textarea>
-      </div>
+        <!-- Comentarios -->
+        <div class="mb-3">
+          <label for="comentarios" class="form-label form__text">Comentarios</label>
+          <textarea class="form-control" id="comentarios" rows="3" placeholder="Escribe tus comentarios"></textarea>
+        </div>
 
-      <!-- Checkbox de términos -->
-      <div class="form-check mb-3">
-        <input type="checkbox" class="form-check-input" id="terminos" required>
-        <label class="form-check-label" for="terminos">
-          Acepto los términos y condiciones
-        </label>
-      </div>
+        <!-- Checkbox de términos -->
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="terminos" required>
+          <label class="form-check-label" for="terminos">
+            Acepto los términos y condiciones
+          </label>
+        </div>
 
-      <!-- Botón -->
-      <button type="submit" class="btn btn-primary w-100">Enviar</button>
-    </form>
-  </div>
+        <!-- Botón -->
+        <button type="submit" class="btn btn-outline-secondary w-100 btn__send">Enviar</button>
+      </form>
+    </div>
+  </main>
+
   <include src="./views/footer.html"></include>
   <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+
+  <script type="module" src="./assets/scripts/selector.js"></script><!-- do not remove this line! -->
 </body>
 
 </html>

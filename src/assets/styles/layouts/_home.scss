@@ -105,16 +105,16 @@ body {
     text-decoration: none;
 
     &:visited {
-      color: white; // Color para enlaces visitados
+      color: white; 
     }
 
     &:hover {
-      color: white; // Color al pasar el cursor
-      background-color: #3a393f; // Fondo más oscuro en hover (opcional)
+      color: white; 
+      background-color: #3a393f; 
     }
 
     &:active {
-      color: white; // Color cuando se hace clic
+      color: white; 
     }
   }
 
@@ -137,11 +137,8 @@ body {
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
     margin: 0;
-    /* Asegura que se alinee correctamente */
     align-items: center;
-    /* Centrado vertical */
     justify-content: center;
-    /* Centrado horizontal */
     color: #2c2b31;
 
 
@@ -163,14 +160,15 @@ body {
 .rotated-text {
   transform: rotate(270deg);
   transform-origin: center;
-  /* Punto de rotación desde el centro */
   display: inline-block;
-  /* Necesario para que respete sus propios límites */
   white-space: nowrap;
-  /* Evita que el texto haga saltos de línea */
 }
 
 .bg-red {
   background-color: red;
   color: white;
+}
+
+.active {
+  color: #FFDB58;
 }

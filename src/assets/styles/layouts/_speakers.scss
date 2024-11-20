@@ -1,0 +1,80 @@
+.speakers__folder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: black;
+    background-color: #fafafa;
+}
+
+.speakers__main {
+    width: 90%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .speakers__title {
+        font-size: 5rem;
+        margin: 1rem;
+    }
+
+    .speakers__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .speakers__main-characters,
+        .speakers__colab-characters {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10rem;
+
+            .speaker__character__item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                border-radius: 10px;
+                margin: 3rem 1rem;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                min-height: 560px;
+
+                &:hover {
+                    transform: scale(1.15);
+                    transition: transform 0.5s;
+                }
+
+                transform: scale(1);
+                transition: transform 0.5s;
+
+
+                p {
+                    width: 280px;
+                    text-align: justify;
+                }
+
+                .speaker__character__name {
+                    font-size: 2rem;
+                    margin: 2rem;
+                    text-align: center;
+                    text-transform: capitalize;
+                    line-height: 2.5rem;
+                }
+            }
+
+        }
+
+    }
+
+    img {
+        padding-top: 1rem;
+        width: auto;
+        height: 300px;
+    }
+}
