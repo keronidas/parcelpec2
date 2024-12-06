@@ -4,13 +4,17 @@
   "private": true,
   "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
+    "stylelint": "stylelint src/**/*.scss",
     "parcel:serve": "parcel -p 8123 --target web --open",
     "parcel:build": "parcel build --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
+    "lint:css": "stylelint '**/*.css' '**/*.scss'",
+    "lint:css:fix": "stylelint '**/*.css' '**/*.scss' --fix",
     "dev": "npm-run-all clean parcel:serve optimize-images",
-    "build": "npm-run-all clean parcel:build optimize-images",
+    "build": "npm-run-all clean  parcel:build optimize-images build:message",
     "optimize-images": "node optimize-images.js",
-    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
+    "build:message": "echo '✅ Build completed successfully! You can now deploy your project.'",
+    "test": "echo 'Everything is working as expected ✅\\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "targets": {
     "web": {
@@ -43,7 +47,12 @@
     "postcss-preset-env": "^9.1.1",
     "posthtml-include": "^1.7.4",
     "rimraf": "^5.0.1",
-    "sharp": "^0.31.3"
+    "sharp": "^0.31.3",
+    "stylelint": "^16.11.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-scss": "^6.10.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.0",
@@ -54,5 +63,5 @@
     "imagemin-pngquant": "^10.0.0",
     "imagemin-svgo": "^11.0.1"
   },
-  "type": "module"  
+  "type": "module"
 }

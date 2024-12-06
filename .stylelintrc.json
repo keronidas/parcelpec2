@@ -1,0 +1,38 @@
+{
+    "extends": [
+        "stylelint-config-standard"
+    ],
+    "plugins": [
+        "stylelint-scss"
+    ],
+    "rules": {
+        "block-no-empty": null,
+        "selector-class-pattern": "^[a-z0-9\\-_]+$",
+        "import-notation": null,
+        "at-rule-no-unknown": null,
+        "scss/at-rule-no-unknown": true,
+        "scss/function-no-unknown": true,
+        "value-keyword-case": [
+            "lower",
+            {
+                "ignoreKeywords": [
+                    "BlinkMacSystemFont",
+                    "Roboto",
+                    "Arial",
+                    "Helvetica Neue",
+                    "Segoe UI Emoji",
+                    "Segoe UI Symbol",
+                    "Apple Color Emoji"
+                ]
+            }
+        ],
+        "color-function-notation": "modern",
+        "font-family-name-quotes": "never",
+        "no-descending-specificity": null,
+        "length-zero-no-unit": null,
+        "declaration-block-no-duplicate-properties": null,
+        "media-query-no-invalid": null,
+        "declaration-empty-line-before": null,
+        "rule-empty-line-before": null
+    }
+}
